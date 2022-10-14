@@ -15,7 +15,7 @@ router.post('/', [
     body('b').isInt().withMessage('b는 Int형 데이터입니다. 정수를 입력해주세요!'),
     body('c').isInt().withMessage('c는 Int형 데이터입니다. 정수를 입력해주세요!'),
     validator.validate
-], (req, res) => {
+], function (req, res) {
     const a = req.body.a
     const b = req.body.b
     const c = req.body.c
