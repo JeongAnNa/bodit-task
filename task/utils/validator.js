@@ -3,12 +3,16 @@ const equation = require('../utils/equation');
 
 function validate (req, res, next){
     const errors = validationResult(req);
-
+    let msg = []
     if (errors.isEmpty()) {
       return next();
     }
 
-    return res.status(400).json({ message: errors.array() });
+    for (i=0; i<errors.array().length; i++){
+      msg.push(errors.array()[i].msg);
+    }
+
+    return res.status(400).json({ message: msg });
 };  
 
 module.exports.validate = validate;
