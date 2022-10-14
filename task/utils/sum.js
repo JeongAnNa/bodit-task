@@ -1,4 +1,4 @@
-function sum(start, end){
+function getSumTotal(start, end){
     result = 0
 
     for(i=start; i <= end; i++) {
@@ -9,4 +9,4 @@ function sum(start, end){
     return result
 }
 
-module.exports = sum
+module.exports = getSumTotal
