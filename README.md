@@ -14,7 +14,7 @@
 > npm start
 
 #### - API 명세서
-> [bodit-task3-api Post Man Link](https://documenter.getpostman.com/view/16132924/2s847BSEpp)
+> [bodit-task3-api Post Man Link](https://documenter.getpostman.com/view/16132924/2s8479ybd7)
 
 ---
 
@@ -27,4 +27,4 @@
 > .env file을 만들어 Naver Open API App의 Clent ID와 Client Secret값을 환경변수로 설정
 
 #### - API 명세서
-> [bodit-task4-api Post Man Link](https://documenter.getpostman.com/view/16132924/2s847A1HZe)
+> [bodit-task4-api Post Man Link](https://documenter.getpostman.com/view/16132924/2s847BSEpp)
