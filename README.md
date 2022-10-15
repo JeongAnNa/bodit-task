@@ -3,6 +3,8 @@
 ### TASK1. Data Pipeline 설계
 ![Data Pipeline Architecture](./task1/bodit-task1-architecture.png)
 
+---
+
 ### TASK3. DB Table 설계 & Query 작성
 ![DB Diagram](./task2/bodit-task2-diagram.png)
 
