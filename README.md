@@ -14,7 +14,7 @@
 > npm start
 
 #### - API 명세서
-> [bodit-task3-api Post Man Link](https://documenter.getpostman.com/view/16132924/2s8479ybd7)
+> [bodit-task3-api Post Man Link](https://documenter.getpostman.com/view/16132924/2s847BSEpp)
 
 ---
 
