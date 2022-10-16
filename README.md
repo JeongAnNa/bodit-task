@@ -31,9 +31,9 @@
         - DELETE FROM `bodit-task`.`measurement_records` WHERE (`record_id` = '1');
 - 측정 데이터
     - Insert
-        CALL insertData(1, "어깨 신전", -30);
+        - CALL insertData(1, "어깨 신전", -30);
     - Delette
-        CALL deleteData(1, "어깨 신전");
+        - CALL deleteData(1, "어깨 신전");
 
 5. Insert Data State Table
 > insertDataState.sql 실행   
