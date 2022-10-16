@@ -1,4 +1,4 @@
--- Measurement Datas Table에 데이터 Insert시 제약사항
+-- Measurement Datas Table의 데이터 추가 프로시저
 DELIMITER $$
 CREATE PROCEDURE insertData (newId INT, newKind VARCHAR(12), newFigure INT)
 BEGIN
@@ -25,7 +25,7 @@ DECLARE EXIT HANDLER FOR SQLEXCEPTION
 END $$
 DELIMITER ;
 
--- Measurement Datas Table에 데이터 Insert시 기존에 있던 데이터인지 확인
+-- 중복 데이터 확인 프로시저
 DELIMITER $$
 CREATE PROCEDURE duplicateCheck (newId INT, newKind VARCHAR(12), newFigure INT)
 BEGIN
@@ -41,5 +41,20 @@ DECLARE EXIT HANDLER FOR SQLEXCEPTION
     END IF;
 
     COMMIT;
+END $$
+DELIMITER ;
+
+-- Measurement Datas Table의 데이터 삭제 프로시저
+DELIMITER $$
+CREATE PROCEDURE deleteData (oldId INT, oldKind VARCHAR(12))
+BEGIN
+DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    START TRANSACTION;	
+    
+    IF oldKind LIKE "어깨%" THEN
+		DELETE FROM `measurement_datas` WHERE record_id=oldID AND kind LIKE "어깨%";
+	ELSE
+		DELETE FROM `measurement_datas` WHERE record_id=oldID AND kind=oldKind;
+	END IF;
 END $$
 DELIMITER ;
