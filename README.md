@@ -5,7 +5,7 @@
 
 ---
 
-### TASK3. DB Table 설계 & Query 작성
+### TASK2. DB Table 설계 & Query 작성
 ![DB Diagram](./task2/bodit-task2-diagram.png)
 
 1. Create Schema
