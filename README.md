@@ -36,8 +36,7 @@
         CALL deleteData(1, "어깨 신전");
 
 5. Insert Data State Table
-> insertDataState.sql 실행 
-
+> insertDataState.sql 실행___
 > _측정 데이터 테이블에 Insert 시 반환될 상태 코드, 종류, 메세지 정보가 저장된 Table_
 
 6. 어꺠 신전, 어깨 굴곡 Insert 제약 조건
