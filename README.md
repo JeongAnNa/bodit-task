@@ -15,7 +15,7 @@
 > `createTable.sql` 파일 실행
 
 3. Create Procedure
-> `createProcedure.sql` 파일 실행
+> `createProcedure.sql` 파일 실행   
 > _측정 데이터 입력, 삭제는 프로시저를 통해 실행_
 
 4. Insert Data
